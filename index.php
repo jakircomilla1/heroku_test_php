@@ -16,7 +16,7 @@ echo "<br />";
 <html lang="en-US">
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>Test PHP</title>
 	</head>
 	<body>
 	
