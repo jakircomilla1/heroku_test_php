@@ -1,25 +1,9 @@
 <?php
-$word_limit = str_word_count("Hello world!");
-
-if ($word_limit == "9") {
-    echo "Word Limit is = 2";
-} else {
-    echo "Word Limit is not 2";
+if(isset($_REQUEST['hub_challenge'])){
+	$challenge = $_REQUEST['hub_challenge'];
+	$token = $_REQUEST['hub_verify_token'];
 }
-echo "<br />";
-
-
+if($token == "mohammad_jakir_hossain_voice_is_mohammad_jakir_hossain_also_facebook_messages"){
+	echo $challenge;
+}
 ?>
-
-
-<!DOCTYPE HTML>
-<html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
-		<title>Test PHP</title>
-	</head>
-	<body>
-	
-		
-	</body>
-</html>
